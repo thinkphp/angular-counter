@@ -1,0 +1,39 @@
+
+<div class="container">
+  <header>
+    <h1>Counter</h1>
+  </header>
+
+  <main>
+    <section>
+      <p id="value" [style.color]="color()">
+        {{ count() }}
+      </p>
+
+      <section class="button-container">
+        <button
+          class="btn decrease"
+          (click)="handleClick('decrease')"
+        >
+          decrease
+        </button>
+
+        <button
+          class="btn reset"
+          (click)="handleClick('reset')"
+        >
+          reset
+        </button>
+
+        <button
+          class="btn increase"
+          (click)="handleClick('increase')"
+        >
+          increase
+        </button>
+      </section>
+    </section>
+  </main>
+</div>
+
+
